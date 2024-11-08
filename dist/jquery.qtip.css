@@ -1,15 +1,13 @@
 /*
- * qTip2 - Pretty powerful tooltips - v3.0.3
+ * qTip2 - Pretty powerful tooltips - @@vVERSION
  * http://qtip2.com
  *
- * Copyright (c) 2016 
+ * Copyright (c) 2024 
  * Released under the MIT licenses
  * http://jquery.org/license
  *
- * Date: Wed May 11 2016 10:31 GMT+0100+0100
- * Plugins: tips modal viewport svg imagemap ie6
- * Styles: core basic css3
- */
+ * Date: Fri Nov 8 2024 01:55 EST-0500
+@@BUILDPROPS */
 .qtip{
 	position: absolute;
 	left: -28000px;

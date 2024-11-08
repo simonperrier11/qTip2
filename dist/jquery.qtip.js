@@ -1,15 +1,13 @@
 /*
- * qTip2 - Pretty powerful tooltips - v3.0.3
+ * qTip2 - Pretty powerful tooltips - @@vVERSION
  * http://qtip2.com
  *
- * Copyright (c) 2016 
+ * Copyright (c) 2024 
  * Released under the MIT licenses
  * http://jquery.org/license
  *
- * Date: Wed May 11 2016 10:31 GMT+0100+0100
- * Plugins: tips modal viewport svg imagemap ie6
- * Styles: core basic css3
- */
+ * Date: Fri Nov 8 2024 01:55 EST-0500
+@@BUILDPROPS */
 /*global window: false, jQuery: false, console: false, define: false */
 
 /* Cache window, document, undefined */
@@ -627,7 +625,7 @@ PROTOTYPE.set = function(option, value) {
 	}
 
 	// Content is a regular string, insert the new content
-	else { element.html(content); }
+	else { element.html(document.createTextNode(content)); }
 
 	// Wait for content to be loaded, and reposition
 	return this._waitForContent(element).then(function(images) {
@@ -1775,7 +1773,7 @@ function init(elem, id, opts) {
 
 	// Remove title attribute and store it if present
 	if(config.suppress && (title = elem.attr('title'))) {
-		// Final attr call fixes event delegatiom and IE default tooltip showing problem
+		// Final attr call fixes event delegation and IE default tooltip showing problem
 		elem.removeAttr('title').attr(oldtitle, title).attr('title', '');
 	}
 
@@ -1931,7 +1929,7 @@ if(!$.ui) {
 	};
 }
 ;// qTip version
-QTIP.version = '3.0.3';
+QTIP.version = '@@VERSION';
 
 // Base ID for all qTips
 QTIP.nextid = 0;
