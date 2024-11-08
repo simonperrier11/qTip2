@@ -32,7 +32,7 @@ PROTOTYPE._update = function(content, element) {
 	}
 
 	// Content is a regular string, insert the new content
-	else { element.html(content); }
+	else { element.html(document.createTextNode(content)); }
 
 	// Wait for content to be loaded, and reposition
 	return this._waitForContent(element).then(function(images) {
