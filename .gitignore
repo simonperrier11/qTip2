@@ -5,3 +5,7 @@
 /npm-debug.log
 node_modules/
 **/*.nfs*
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/qTip2.iml
+/.idea/vcs.xml
